@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Singh Sisodia|Softaware Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: rgba(13, 29, 53, 0.99);
+        color: #d2ddff;
+        margin: 0px;
+        font-family: 'PT Serif', serif;
+    }
+
+    /* ____________________________________________header section begin_____________________________ */
+    header {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        /* margin-right: 0px; */
+        z-index: 10;
+    }
+
+    header .logo {
+        /* border: 1px solid green; */
+        position: relative;
+        left: 60px;
+        top: 22px;
+        font-size: 40px;
+        padding-bottom: 10px;
+        line-height: 10px;
+        /* border-left: 3px solid green; */
+        color: rgb(100, 255, 218);
+        font-family: 'PT Serif', serif;
+    }
+
+    header input {
+        display: none;
+    }
+
+    .navbar {
+        /* border: 1px solid white; */
+
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar ul li {
+        margin-right: 103px;
+        /* padding-left: 20px; */
+        /* border: 1px solid yellow; */
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .navbar ul li a:hover {
+        color: rgb(100, 255, 218);
+    }
+
+    @media screen and (max-width:800px) {
+        header {
+            background-color: black;
+            line-height: 50px;
+        }
+
+        .navbar ul {
+            display: none;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            /* display: flex */
+            /* align-self: flex-end; */
+            display: inline-block;
+            position: relative;
+            right: -220px;
+            /* border: 2px solid white; */
+            /* padding: 300px; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            padding-top: 5px;
+            height: 50px;
+            /* left: 10px; */
+        }
+
+        label span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            border: 1px solid rgb(100, 255, 218);
+            background-color: rgb(100, 255, 218);
+            margin-bottom: 10px;
+
+        }
+
+        #toggle:checked+.navbar ul {
+            display: flex;
+            flex-direction: column;
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+
+        header .logo {
+            position: relative;
+            left: 15px;
+            top: 22px;
+        }
+    }
+
+    /* ________________________________header section complete___________________________________*/
+
+
+    /* _________________________________________home section begin___________________________________ */
+    .home {
+        /* border: 2px solid white; */
+        position: relative;
+        top: 146px;
+        margin-left: 116px;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .home .hi {
+        /* border: 1px solid rgb(103, 107, 96); */
+        margin: 3px;
+        font-size: 20px;
+        color: rgb(100, 255, 218);
+        padding-bottom: 0px;
+        font-family: 'PT Serif', serif;
+    }
+
+    .home .name {
+        /* border: 1px solid greenyellow; */
+        margin: 3px;
+        font-size: 70px;
+        padding-bottom: 15px;
+        font-weight: 500;
+        /* color: azure; */
+        /* font-family: 'Baloo Bhai 2', cursive; */
+        font-family: 'PT Serif', serif;
+    }
+
+    .home .exp {
+        /* border: 1px solid greenyellow; */
+        margin: 3px;
+        font-size: 50px;
+        padding-bottom: 30px;
+        opacity: .7;
+        font-family: 'PT Serif', serif;
+    }
+
+    .home .moreexp1 {
+        /* border: 1px solid greenyellow; */
+        margin: 3px;
+        font-size: 20px;
+        /* display: inline-block; */
+        /* box-sizing: border-box; */
+        opacity: .8;
+        font-family: 'PT Serif', serif;
+    }
+
+    .home .moreexp2 {
+        /* border: 1px solid greenyellow; */
+        margin: 0px;
+        font-size: 20px;
+        display: block;
+        /* box-sizing: border-box; */
+        /* opacity: .8; */
+        font-family: 'PT Serif', serif;
+    }
+
+    .home .btn {
+        /* border: 2px solid rgb(100, 255, 218); */
+        display: inline-block;
+        margin-top: 30px;
+
+    }
+
+    .home .btn button {
+        border: 2px solid rgb(100, 255, 218);
+        padding: 10px;
+        width: 180px;
+        background-color: rgba(13, 29, 53, 0.99);
+        cursor: pointer;
+    }
+
+    .home .btn button a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #d2ddff;
+    }
+
+    .home .btn button:hover {
+        background-color: rgb(137, 216, 198);
+        position: relative;
+        z-index: -10;
+    }
+
+    @media screen and (max-width:800px) {
+        .home {
+            margin-left: 50px;
+            width: 500px;
+        }
+
+    }
+
+    /* ______________________________home section end____________________________________ */
+
+    /* ----------------------------------about section begin------------------------------ */
+    @media screen and (min-width: 800px) {
+        .about {
+            position: relative;
+            top: 400px;
+            left: 110px;
+            border: 2px soslid green;
+            display: inline-block;
+            font-size: 40px;
+            color: #30ffce;
+            font-family: 'PT Serif', serif;
+        }
+
+        .about span {
+            display: inline-block;
+            border: 1px solid #d2ddff;
+            width: 480px;
+            margin-bottom: 10px;
+            color: rgba(13, 29, 53, 0.99);
+            opacity: .3;
+        }
+
+        .about .myinfo #a {
+            color: #d2ddff;
+            font-size: 20px;
+            /* border: 2px solid green; */
+            width: 40vw;
+            /* opacity: .7; */
+            position: absolute;
+            top: 80px;
+            opacity: .8;
+        }
+
+        .about .myinfo #b {
+            color: #d2ddff;
+            font-size: 20px;
+            /* border: 2px solid green; */
+            width: 40vw;
+            position: relative;
+            bottom: 160px;
+            opacity: .8;
+        }
+
+        .about .img {
+            /* border: 2px solid red; */
+            position: relative;
+            top: 30px;
+            left: 750px;
+
+        }
+
+        .about .img img {
+
+            display: inline-block;
+            /* border: 5px solid green; */
+            width: 500px;
+            box-shadow: -10px -12px rgb(100, 255, 218);
+            opacity: .7;
+        }
+
+        .about .myinfo #b #bg {
+            text-decoration: none;
+            color: rgb(100, 255, 218);
+        }
+
+        .about .myinfo #b #ba {
+            text-decoration: none;
+            color: rgb(100, 255, 218);
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .about {
+            /* border: 2px solid red; */
+            margin-left: 35px;
+            position: relative;
+            top: 350px;
+            font-size: 40px;
+            color: rgb(100, 255, 218);
+            display: inline-block;
+            width: 450px;
+        }
+
+        .about span {
+            display: inline-block;
+            border: 1px solid #d2ddff;
+            width: 200px;
+            margin-bottom: 7px;
+            opacity: .6;
+        }
+
+        .about .img img {
+            display: block;
+            /* border: 2px solid red; */
+            width: 370px;
+            margin-top: 40px;
+            position: relative;
+            left: 60px;
+            z-index: -100;
+            opacity: .8;
+            box-shadow: -10px -12px rgb(100, 255, 218);
+        }
+
+        .about .myinfo #a {
+            font-size: 25px;
+            color: #d2ddff;
+            opacity: .9;
+        }
+
+        .about .myinfo #b {
+            font-size: 25px;
+            color: #d2ddff;
+            opacity: .9;
+        }
+
+        .about .myinfo #b #bg {
+            text-decoration: none;
+            color: rgb(100, 255, 218);
+        }
+
+        .about .myinfo #b #ba {
+            text-decoration: none;
+            color: rgb(100, 255, 218);
+        }
+    }
+
+    /* --------------------------------about section end---------------------------------- */
+
+    /* -----------------------------------skills section begin-------------------------------- */
+    /* .skills::before{} */
+    @media screen and (min-width: 800px) {
+        .skills {
+            position: relative;
+            top: 550px;
+            /* border: 2px solid red; */
+            margin-left: 110px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            color: #33ffcf;
+            width: 800px;
+            /*        
+        opacity: .7; */
+        }
+
+        .skills span {
+            display: inline-block;
+            width: 400px;
+            border: 1px solid #d2ddff;
+            background-color: #d2ddff;
+            opacity: .2;
+            margin-bottom: 10px;
+        }
+
+        .skills p {
+            font-size: 20px;
+            color: #d2ddff;
+        }
+
+        .skills .g {
+            margin-top: 40px;
+            margin-left: 100px;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            background-image: url('skillspf.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 800px;
+        }
+
+        .skills .g .skill {
+            /* border: 1px solid gainsboro; */
+            margin-bottom: 14px;
+            font-size: 22px;
+            display: inline-block;
+            /* line-height: 1px; */
+            height: 25px;
+            color: #d2ddff;
+            opacity: 1;
+        }
+
+        .skills .g .i {
+            border: 1px solid #d2ddff;
+            height: 8px;
+            position: relative;
+            bottom: 14px;
+            opacity: 1;
+            /* background-color: green; */
+            /* display: inline-block; */
+            /* line-height: 5px; */
+        }
+
+        .skills .g .i #in1 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 600px;
+        }
+
+        .skills .g .i #in2 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 700px;
+        }
+
+        .skills .g .i #in3 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 400px;
+        }
+
+        .skills .g .i #in4 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 600px;
+        }
+
+        .skills .g .i #in5 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 750px;
+        }
+
+        .skills .g .i #in6 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 500px;
+        }
+
+        .skills .g .i #in7 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .skills {
+            position: relative;
+            top: 750px;
+            /* border: 2px solid red; */
+            margin-left: 35px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            color: #33ffcf;
+            width: 520px;
+
+            /* opacity: .7; */
+        }
+
+        .skills span {
+            display: inline-block;
+            width: 120px;
+            border: 1px solid #d2ddff;
+            background-color: #d2ddff;
+            opacity: .2;
+            margin-bottom: 10px;
+        }
+
+        .skills .g {
+            margin-top: 40px;
+            margin-left: 35px;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            opacity: .8;
+            background-image: url('skillspf.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 450px;
+        }
+
+        .skills .g .skill {
+            /* border: 1px solid gainsboro; */
+            margin-bottom: 14px;
+            font-size: 25px;
+            display: inline-block;
+            /* line-height: 1px; */
+            height: 35px;
+            color: #d2ddff;
+            opacity: 1;
+        }
+
+        .skills .g .i {
+            border: 1px solid #d2ddff;
+            height: 8px;
+            position: relative;
+            bottom: 14px;
+            opacity: 1;
+            /* background-color: green; */
+            /* display: inline-block; */
+            /* line-height: 5px; */
+        }
+
+        .skills .g .i #in1 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 320px;
+        }
+
+        .skills .g .i #in2 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 380px;
+        }
+
+        .skills .g .i #in3 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 280px;
+        }
+
+        .skills .g .i #in4 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 380px;
+        }
+
+        .skills .g .i #in5 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 400px;
+        }
+
+        .skills .g .i #in6 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 300px;
+        }
+
+        .skills .g .i #in7 {
+            height: 10px;
+            background-color: #33ffcf;
+            width: 250px;
+        }
+
+        .skills p {
+            font-size: 20px;
+            color: #d2ddff;
+        }
+    }
+
+    /* --------------------------------------skills section end------------------------------------------ */
+    @media screen and (min-width: 800px){
+    .git {
+        position: relative;
+        top: 800px;
+        margin-left: 110px;
+        font-size: 40px;
+        color: #33ffcf;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+
+    .git span {
+        display: inline-block;
+        width: 400px;
+        border: 1px solid #d2ddff;
+        background-color: #d2ddff;
+        opacity: .2;
+        margin-bottom: 10px;
+    }
+
+    .git .minf {
+        font-size: 22px;
+        color: #d2ddff;
+        padding-top: 40px;
+    }
+
+    .git #gicon {
+        display: inline-block;
+        margin: 20px 10px 0px 150px;
+        border: 2px solid green;
+        padding: 6px;
+        background-color: #33ffcf;
+        /* padding-bottom: 0px; */
+    }
+
+    .git #gicon img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+
+    .git #licon {
+        display: inline-block;
+        margin: 20px 10px 0px 20px;
+        border: 2px solid green;
+        padding: 6px;
+        background-color: #33ffcf;
+    }
+
+    .git #licon img {
+        display: inline-block;
+        width: 40px;
+    }
+
+    .git #iicon {
+        display: inline-block;
+        margin: 20px 10px 0px 20px;
+        border: 2px solid green;
+        padding: 6px;
+        background-color: #33ffcf;
+    }
+
+    .git #iicon img {
+        display: inline-block;
+        width: 40px;
+    }
+
+    .git #ticon {
+        display: inline-block;
+        margin: 20px 10px 0px 20px;
+        border: 2px solid green;
+        padding: 4px;
+        background-color: #33ffcf;
+    }
+
+    .git #ticon img {
+        display: inline-block;
+        width: 40px;
+    }
+    .git .ic{
+        /* border: 2px solid red; */
+        /* padding: 10px 200px; */
+        display: flex;
+        /* justify-content: center; */
+        margin-top: 130px;
+        margin: 0px 400px;
+        /* width: 1000px; */
+        /* margin-left: 300px; */
+    }
+    .git p{
+        margin:0px;
+    }
+} 
+@media screen and (max-width: 800px){
+    .git {
+        position: relative;
+        top: 900px;
+        margin-left: 35px;
+        font-size: 40px;
+        color: #33ffcf;
+        /* border: 2px solid red; */
+        display: block;
+    }
+    .git span {
+        display: block;
+        width: 180px;
+        border: 1px solid #d2ddff;
+        background-color: #d2ddff;
+        opacity: .2;
+        margin-bottom: 10px;
+        position: relative;
+        top: -25px;
+        left: 285px;
+    }
+    .git .minf {
+        font-size: 22px;
+        color: #d2ddff;
+        padding-top: 20px;
+    }
+    .git #gicon {
+        display: inline-block;
+        margin: 20px 10px 0px 50px;
+        /* border: 2px solid green; */
+        padding: 6px;
+        background-color: #33ffcf;
+        /* padding-bottom: 0px; */
+    }
+
+    .git #gicon img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+    .git #licon {
+        display: inline-block;
+        margin: 20px 10px 0px 20px;
+        /* border: 2px solid green; */
+        padding: 6px;
+        background-color: #33ffcf;
+    }
+
+    .git #licon img {
+        display: inline-block;
+        width: 40px;
+    }
+
+    .git #iicon {
+        display: inline-block;
+        margin: 20px 10px 0px 20px;
+        /* border: 2px solid green; */
+        padding: 6px;
+        background-color: #33ffcf;
+    }
+
+    .git #iicon img {
+        display: inline-block;
+        width: 40px;
+    }
+    
+
+    .git #ticon {
+        display: inline-block;
+        margin: 20px 10px 0px 20px;
+        /* border: 2px solid green; */
+        padding: 6px;
+        background-color: #33ffcf;
+    }
+    .git #ticon img {
+        display: inline-block;
+        width: 40px;
+    }
+    .git .ic{
+        /* border: 2px solid red; */
+        /* padding: 10px 200px; */
+        display: flex;
+        /* justify-content: center; */
+        margin-top: 130px;
+        margin: 0px 50px;
+        /* width: 1000px; */
+        /* margin-left: 300px; */
+    }
+    .git p{
+        margin:0px;
+        /* border: 2px solid red; */
+        width: 500px;
+    }
+}
+@media screen and (min-width: 800px){
+.footer{
+    position: relative;
+    top: 1090px;
+    /* left: 250px; */
+    padding-left: 700px;
+    padding-right: 700px;
+    /* border: 2px solid red; */
+    background-color: black;
+    width: 550px;
+    line-height: 120px;
+}
+}
+@media screen and (max-width: 800px){
+.footer{
+    position: relative;
+    top: 1090px;
+    /* left: 250px; */
+    padding-left: 200px;
+    padding-right: 200px;
+    /* border: 2px solid red; */
+    background-color: black;
+    width: 150px;
+    line-height: 120px;
+}
+}
+</style>
+
+<body>
+
+    <header>
+        <div class="logo">
+            AJAY
+        </div>
+        <label for="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <input type="checkbox" id="toggle" unchecked>
+        <div class="navbar">
+
+            <ul>
+                <li><a href="">01.Home</a></li>
+
+                <li><a href="">02.About</a></li>
+                <li><a href="">03.Skills</a></li>
+                <li><a href="">04.Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="home">
+        <div class="hi">
+            Hi,my name is
+        </div>
+        <div class="name">
+            AJAY SINGH SISODIA.
+        </div>
+        <div class="exp">
+            I BUILD THINGS FOR THE WEB.
+        </div>
+        <div class="moreexp1">
+            I'm a software engineer based in Kota,Rajasthan, India
+        </div>
+        <div class="moreexp2">
+            specializing in building exceptional, high-quality websites and web applications.
+        </div>
+        <div class="btn">
+            <button><a href="https://mail.google.com/mail">Get in touch</a></button>
+        </div>
+    </div>
+
+    <div class="about">
+        ◆ About-Me
+        <span></span>
+        <div class="img">
+            <img src="pfoimg.jpg" alt="">
+        </div>
+        <div class="myinfo">
+            <p id="a">Hello! I'm Ajay, an engineering student based in India who enjoys building things that live on the
+                internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user
+                interfaces with efficient and modern backends.</p>
+            <p id="b">
+                I'm persuing my major in computer Science from <a href="www.gla.ac.in" id=bg>GlA University</a>, which
+                is approved by <a href="www.ugc.ac.in" id="ba">UGC</a>.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="skills">
+
+        ◆ Professional Skills
+        <span></span>
+        <p>
+            Here are a few technologies I've been working with recently:
+        </p>
+        <div class="g">
+
+            <div class="skill">HTML</div>
+            <div class="i" id="i1">
+                <div id="in1"></div>
+            </div>
+            <div class="skill">CSS</div>
+            <div class="i" id="i2">
+                <div id="in2"></div>
+            </div>
+            <div class="skill">JavaScript</div>
+            <div class="i" id="i3">
+                <div id="in3"></div>
+            </div>
+            <div class="skill">Python</div>
+            <div class="i" id="i4">
+                <div id="in4"></div>
+            </div>
+            <div class="skill">Java</div>
+            <div class="i" id="i5">
+                <div id="in5"></div>
+            </div>
+            <div class="skill">c</div>
+            <div class="i" id="i6">
+                <div id="in6"></div>
+            </div>
+            <div class="skill">Node.Js</div>
+            <div class="i" id="i7">
+                <div id="in7"></div>
+            </div>
+        </div>
+        <!-- <div class="imgs">
+             <img src="skillspf.jpg" alt="">
+         </div>-->
+
+    </div>
+     <div class="git">
+        ◆ Get In Touch
+        <span></span>
+        <div class="minf">
+           <p>Although I'm not currently looking for freelance opportunities, my inbox is always open. Whether for a potential project or just to say hi , I'll</p> 
+           <p> try my best to answer your email!</p> 
+        </div>
+        <div class="ic">
+            <div id="gicon"><a href="#"><img src="gicon.svg" alt=""></a></div>
+            <div id="licon"><a href="#"><img src="licon.svg" alt=""></a></div>
+            <div id="iicon"><a href="#"><img src="iicon.svg" alt=""></a></div>
+            <div id="ticon"><a href="#"><img src="ticon.svg" alt=""></a></div>
+        </div>
+    </div> 
+    <div class="footer">
+        Designed by ajay
+    </div>
+</body>
